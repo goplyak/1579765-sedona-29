@@ -90,13 +90,10 @@ a {
 .advantages-list {}
 .advantages-list__item {}
 .advantage-background {
-  background: var(-advantages-gray);
+  background: var(--advantages-white);
 }
 .background-blue {
   background: var(--advantages-blue);
-}
-.background-white {
-  background: var(--advantages-white);
 }
 .background-gray {
   background: var(--advantages-gray);
@@ -151,7 +148,13 @@ a {
   background-color: var(--footer-background);
   color: var(--footer-color);
 }
-.footer-contact {}
+.footer-contact {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
 .footer-contact__tel{
   color: var(--footer-color);
 }
@@ -169,5 +172,83 @@ a {
 .icon-twitter:after {}
 .icon-facebook:after {}
 .icon-youtube:after {}
-.site-create {}
-.site-create__link {}
+.site-create {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+.site-create__link {
+    vertical-align: middle;
+}
+
+/*hostels*/
+.section-filter {
+    background:#81B3D2 url(https://via.placeholder.com/1200x217) no-repeat center center;
+    background-size: cover;
+}
+.section-filter__col {
+  text-transform: uppercase;
+}
+.section-filter__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+.section-filter__list {
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.section-filter__body {}
+.container-header {}
+.page-title-left{
+  text-align: left;
+}
+.page-sortby {}
+.page-sortby__item {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000;
+}
+.page-sortby__link {
+  color: rgba(0, 0, 0, .3);
+  border-bottom: 1px dashed #81B3D2;
+}
+.page-sortby__link-current {
+  border: transparent;
+  color: #81B3D2;
+}
+.page-sortby__link:hover {
+  color: #81B3D2;
+}
+.page-sortby__link:active {
+  border: transparent;
+  color: #000;
+}
+.page-orderby {}
+.page-orderby__item {}
+.page-orderby__item-current {}
+.hostel-item {}
+.hostel-item__image {}
+.hostel-item__image-item {}
+.hostel-item__info {}
+.hostel-title {}
+.hostel-title__link {}
+.additionally {}
+.additionally__name {}
+.additionally__value {}
+.buttons-list {}
+.button {}
+.button-brown {}
+.hostel-rating {}
+.hostel-item__rating {}
+.hostel-stars {}
+.hostel-stars__item {}
+.hostel-rating__result {}
