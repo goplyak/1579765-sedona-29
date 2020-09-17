@@ -1,0 +1,173 @@
+:root {
+  --body-background: #F2F2F2;
+  --container-color: #FFF;
+  --container-color-shadow: rgba(0, 1, 1, .2);
+  --basic-menu-color: #000;
+  --basic-menu-hover: #81B3D2;
+  --basic-menu-active: rgba(0, 0, 0, .3);
+  --basic-menu-current: #766357;
+  --title-color-black: #000;
+  --desciption-color: #333;
+  --advantages-blue: #81B3D2;
+  --advantages-gray: #EEE;
+  --advantages-white: #fff;
+  --advantages-basic-title: #000;
+  --advantages-basic-text: #333;
+  --advantages-blue-text: #fff;
+  --link-brown:#766357;
+  --link-brown-hover:#604E43;
+  --link-brown-active:#503E33;
+  --link-brown-color:#fff;
+  --link-brown-color-active:rgba(255, 255, 255, .3);
+  --search-form-background:#fff;
+  --search-form-shadow:rgba(0, 1, 1, .15);
+  --footer-background: rgba(255, 255, 255, .9);
+  --footer-color: #000;
+  --socials-background:#81B3D2;
+  --socials-background-hover:#669EC0;
+  --socials-background-active:#5496BD;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  background: var(--body-background);
+}
+img { 
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  height: auto;
+}
+.container {
+  background: var(--container-color);
+  box-shadow: 0px 5px 15px var(--container-color-shadow);
+}
+.header-site {}
+.logo-header {}
+.menu-main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-main__item {
+  text-align: center;
+}
+.menu-main__link {
+  color: var(--basic-menu-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.menu-main__link:hover {
+  color: var(--basic-menu-hover);
+}
+.menu-main__link:active {
+  color: var(--basic-menu-active);
+}
+.menu-main__link-current{
+  color: var(--basic-menu-current);
+}
+.main-container {}
+.background-image-home {}
+.section-information {}
+.page-title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--title-color-black);
+}
+.page-description,.advantage-description {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--desciption-color);
+}
+.section-advantages {}
+.advantages-list {}
+.advantages-list__item {}
+.advantage-background {
+  background: var(-advantages-gray);
+}
+.background-blue {
+  background: var(--advantages-blue);
+}
+.background-white {
+  background: var(--advantages-white);
+}
+.background-gray {
+  background: var(--advantages-gray);
+}
+.advantage-title {
+  color:var(--advantages-basic-title);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.background-blue .advantage-title,.background-blue .advantage-description,.background-blue .advantage-number{
+  color:var(--advantages-blue-text);
+}
+.advantage-number {}
+.advantage-description {
+  line-height: 21px;
+  color:var(--advantages-basic-text);
+}
+.image-item {}
+.advantages-sub {}
+.section-form {}
+.section-form__title {
+  color: var(--title-color-black);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-form__description {
+  line-height: 24px;
+}
+.search-button {
+  color:var(--link-brown-color);
+  background-color: var(--link-brown);
+}
+.search-button:hover {
+  background-color: var(--link-brown-hover);
+}
+.search-button:active {
+  color:var(--link-brown-color-active);
+  background-color: var(--link-brown-active);
+}
+.search-form {
+  background-color: var(--search-form-background);
+  box-shadow: 0px 5px 15px var(--search-form-shadow);
+}
+.contacts-map {}
+.footer-site {
+  background-color: var(--footer-background);
+  color: var(--footer-color);
+}
+.footer-contact {}
+.footer-contact__tel{
+  color: var(--footer-color);
+}
+.site-socials {}
+.site-socials__item {
+  background: var(--socials-background);
+}
+.site-socials__item:hover{
+  background: var(--socials-background-hover);
+}
+.site-socials__item:active{
+  background: var(--socials-background-active);
+}
+
+.icon-twitter:after {}
+.icon-facebook:after {}
+.icon-youtube:after {}
+.site-create {}
+.site-create__link {}
