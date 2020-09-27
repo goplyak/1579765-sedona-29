@@ -61,7 +61,9 @@ a {
   color: var(--color-766357);
 }
 .main-container {}
-.background-image-home {}
+.background-image-home {
+  background:var(--color-81b3d2) url(../img/header-background.jpg) no-repeat center center;
+}
 .section-information {}
 .page-title {
   font-weight: 700;
@@ -176,7 +178,7 @@ a {
 
 /*hostels*/
 .section-filter {
-    background:var(--color-81b3d2) url(https://via.placeholder.com/1200x217) no-repeat center center;
+    background:var(--color-81b3d2) url(../img/header-background-cat.jpg) no-repeat center center;
     background-size: cover;
 }
 .section-filter__col {
