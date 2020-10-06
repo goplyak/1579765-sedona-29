@@ -32,62 +32,65 @@
         <section class="section-information">
             <h1 class="page-title">Седона — небольшой городок в Аризоне,<br>
             заслуживающий большего!</h1>
-            <div class="page-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</div>
+            <div class="page-description section-information__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</div>
         </section>
         <section class="section-advantages">
           <!--преймущества-->
           <ol class="advantages-list">
             <li class="advantages-list__item">
-              <div class="advantage-background background-blue">
-                <h2 class="advantage-title">Настоящий городок</h2>
+              <div class="advantage-wrap background-blue">
+                <h2 class="advantage-title">Настоящий <br>городок</h2>
                 <div class="advantage-number"></div>
                 <p class="advantage-description">Седона - не аттракцион для туристов, там<br> течёт своя жизнь</p>
               </div>
-              <img class="image-item" src="img/image-town.jpg" width="800" height="256" alt="">
+              <div class="advantage-image">
+                <img class="advantage-image__item" src="img/image-town.jpg" width="800" height="256" alt="">
+              </div>
               <ul class="advantages-sub">
-                <li class="advantage-background background-white">
+                <li class="advantages-sub__item advantages-icon-house">
                   <h2 class="advantage-title">Жильё</h2>
-                  <p class="advantage-description">Рекомендуем пожить в настоящем мотеле,<br>
-                  всё как в кино!</p>
+                  <p class="advantage-description">Рекомендуем пожить в настоящем <br>мотеле, всё как в кино!</p>
                 </li>
-                <li>
+                <li class="advantages-sub__item advantages-icon-food">
                   <h2 class="advantage-title">Еда</h2>
                   <p class="advantage-description">Всегда заказывайте фирменный бургер,<br>
                   вы не разочаруетесь!</p>
                 </li>
-                <li>
+                <li class="advantages-sub__item advantages-icon-souvenir">
                   <h2 class="advantage-title">Сувениры</h2>
                   <p class="advantage-description">Не только китайского, но и местного<br>
                   производства!</p>
                 </li>
               </ul>
             </li>
-            <li class="advantages-list__item">
-              <div class="advantage-background background-blue">
-                <h2 class="advantage-title">Там есть мост дьявола</h2>
+            <li class="advantages-list__item row-reverse">
+              <div class="advantage-wrap background-blue">
+                <h2 class="advantage-title">Там есть <br>мост дьявола</h2>
                  <!--этот див для цифры (добавлять буду через css)-->
-                <div></div>
+                <div class="advantage-number"></div>
                 <p class="advantage-description">Да, по нему можно пройти! Если конечно<br>
                 вы осмелитесь</p>
               </div>
-               <img src="img/image-bridge.jpg" width="800" height="256" alt="">
+              <div class="advantage-image">
+                <img class="advantage-image__item" src="img/image-bridge.jpg" width="800" height="256" alt="">
+              </div>
             </li>
-            <li class="advantages-list__item background-gray">
-                <h2 class="advantage-title">Небольшая площадь</h2>
+            <li class="advantages-list__column">
+                <h2 class="advantage-title">Небольшая <br>площадь</h2>
                  <!--этот див для цифры (добавлять буду через css)-->
                 <div class="advantage-number"></div>
                 <p class="advantage-description">все достопримечательности<br>
                 находятся очень близко</p>
             </li>
-            <li class="advantages-list__item background-gray">
-                <h2 class="advantage-title">красивая дорога</h2>
+            <li class="advantages-list__column">
+                <h2 class="advantage-title">красивая <br>дорога</h2>
                  <!--этот див для цифры (добавлять буду через css)-->
                 <div class="advantage-number"></div>
                 <p class="advantage-description">ехать в седону из лас-вегаса совсем<br>
                  не скучно!</p>
             </li>
-            <li class="advantages-list__item background-gray">
-                <h2 class="advantage-title">мало туристов</h2>
+            <li class="advantages-list__column">
+                <h2 class="advantage-title">мало <br>туристов</h2>
                  <!--этот див для цифры (добавлять буду через css)-->
                 <div class="advantage-number"></div>
                 <p class="advantage-description"> большинство едет в гранд каньон<br>
@@ -112,7 +115,7 @@
       <footer class="footer-site">
         <div class="footer-contact">
           #visitSEDONA
-          <div>
+          <div class="footer-contact__item">
             Тел:
             <a href="tel:+74956660166" class="footer-contact__tel">+7(495) 666-01-66</a>
           </div>
