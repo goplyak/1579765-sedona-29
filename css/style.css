@@ -343,7 +343,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 66px;
+  min-height: 66px;
   padding: 10px;
   font-weight: 700;
   font-size: 21px;
