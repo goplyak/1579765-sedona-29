@@ -1,11 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
   --color-f2f2f2: #F2F2F2;
   --color-fff: #FFF;
@@ -29,6 +22,9 @@
   --color-bdbbbc:#BDBBBC;
   --color-ababab:#ababab;
   --color-a9a9a9:#a9a9a9;
+  --color-red:red;
+  --color-ebebeb:#EBEBEB;
+  --color-ab-opacity03:rgba(171,171,171,.3);
 }
 .visually-hidden {
   position: absolute;
@@ -44,7 +40,7 @@
   overflow: hidden;
 }
 body {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   background: var(--color-f2f2f2);
   padding: 0 20px;
   min-width: 1200px;
@@ -509,8 +505,9 @@ a {
 }
 .button:focus,.site-socials__link:focus,.button:focus,.button-blue:focus{
   background: var(--color-5496bd);
+  color: var(--color-fff-opacity03);
 }
-.site-socials__link:focus:before,.button-blue:focus span{
+.site-socials__link:focus:before{
   opacity: .3;
 }
 .site-create {
@@ -735,8 +732,15 @@ a {
   position: absolute;
   top: -9px;
   background-color: var(--color-fff);
+  -webkit-box-shadow: 0 2px 0 var(--color-ab-opacity03);
+  box-shadow: 0 2px 0 var(--color-ab-opacity03);
   border-radius: 50%;
   cursor: pointer;
+}
+.range-line__toggle:hover{
+  width: 23px;
+  height: 22px;
+  top: -10px;
 }
 .range-line__toggle:before {
   content: "";
@@ -836,7 +840,7 @@ a {
 .page-orderby__item:hover path {
   fill: var(--color-000);
 }
-.page-orderby__item-current path,.page-orderby__item a:focus path {
+.page-orderby__item-current path,.page-orderby__item:focus path {
   fill: var(--color-81b3d2);
 }
 .page-orderby__icon-desc {
@@ -1003,7 +1007,7 @@ a {
   align-items: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1030,42 +1034,117 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--color-000);
-  border: 0;
   background-color: var(--color-f2f2f2);
-  padding: 6px 40px 6px 10px;
+  padding: 5px 39px 5px 9px;
+  border: 2px solid var(--color-f2f2f2);
+}
+.error-item {
+  border-color: var(--color-red);
+  background-color: var(--color-fff);
+}
+.search-form__input:hover{
+  background-color: var(--color-ebebeb);
+  border-color: var(--color-ebebeb);
+}
+.search-form__input:focus,.search-form__input:active{
+  background-color: var(--color-fff);
+}
+@-webkit-keyframes formTranslate {
+  0% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes formTranslate {
+  0% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.error-form{
+  -webkit-animation: formTranslate 0.2s;
+  animation: formTranslate 0.2s;
 }
 .calendar {
   position: absolute;
   cursor: pointer;
   right: 0;
-  top: 0;
-  padding: 8px 0;
-  height: 23px;
+  top: 1px;
+  padding: 6px 0;
   width: 36px;
   text-align: center;
 }
 .calendar path {
   fill: var(--color-a9a9a9);
 }
-.search-form__input:focus + .calendar path {
-  fill: var(--color-81b3d2);
-}
 .calendar:hover path {
   fill: var(--color-000);
+}
+.calendar:focus path,.calendar:active path {
+  fill: var(--color-81b3d2);
 }
 .search-form__col-counter:nth-child(1) .search-form__label {
   width: 114px;
 }
 .counters-input {
-  width: 112px;
+  width: 114px;
   text-align: center;
-  position: relative;
   margin-top: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: var(--color-f2f2f2);
 }
-.counters-input input {
+.counters-input__item {
   text-align: center;
-  padding: 6px 40px;
-  width: calc(100% - 80px);
+  padding: 5px;
+  width: calc(32% - 12px);
+  color: var(--color-000);
+  background-color: var(--color-f2f2f2);
+  border: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.counters-input__toggle {
+  width: 38px;
+  height: 38px;
+  border: 0;
+  cursor: pointer;
+  background-color: var(--color-f2f2f2);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.counters-input__toggle:hover rect,.counters-input__toggle:hover path{
+  fill: var(--color-000);
+}
+.counters-input__toggle:focus rect,.counters-input__toggle:focus path{
+  fill: var(--color-81b3d2);
 }
 .search-form__col-counter:nth-child(2) .search-form__label {
   padding-right: 30px;
@@ -1083,41 +1162,4 @@ a {
 }
 .search-form__button {
   margin-top: 55px;
-}
-.counters-input__toggle {
-  position: absolute;
-  width: 38px;
-  height: 38px;
-}
-.counters-input__toggle:before {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: 3px;
-  width: 12px;
-  background: var(--color-a9a9a9);
-  margin: auto;content: "";
-}
-.toggle-min {
-  left: 0;
-}
-.toggle-plus {
-  right: 0;
-}
-.toggle-plus:after {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: 11px;
-  width: 3px;
-  background: var(--color-a9a9a9);
-  margin: auto;
-  content: "";
-}
-.toggle-plus:before {
-  width: 11px;
 }

@@ -87,8 +87,12 @@
                 </div>
                 <div class="range-line">
                   <span class="range-line__current"></span>
-                  <span class="range-line__toggle range-line__toggle-min" style="left: 0%;"></span>
-                  <span class="range-line__toggle range-line__toggle-max" style="right: 14%;"></span>
+                  <span class="range-line__toggle range-line__toggle-min" style="left: 0%;" tabindex="0">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </span>
+                  <span class="range-line__toggle range-line__toggle-max" style="right: 14%;" tabindex="0">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </span>
                 </div>
               </div>
             </fieldset>
@@ -105,22 +109,18 @@
           <li class="page-sortby__item"><a class="page-sortby__link" href="#">По рейтингу</a></li>
         </ul>
         <div class="page-orderby">
-          <div class="page-orderby__item">
-            <a href="#">
-              <span class="visually-hidden">От меньшего к большему</span>
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
-              </svg>
-            </a>
-          </div>
-          <div class="page-orderby__item">
-            <a class="page-orderby__item-current" href="#">
-              <span class="visually-hidden">От большего к меньшему</span>
-              <svg class="page-orderby__icon-desc" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
-              </svg>
-            </a>
-          </div>
+          <a class="page-orderby__item" href="#">
+            <span class="visually-hidden">От меньшего к большему</span>
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+            </svg>
+          </a>
+          <a class="page-orderby__item page-orderby__item-current" href="#">
+            <span class="visually-hidden">От большего к меньшему</span>
+            <svg class="page-orderby__icon-desc" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+            </svg>
+          </a>
         </div>
       </section>
       <article class="container-body hostel-item">
